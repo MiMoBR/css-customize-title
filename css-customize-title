@@ -1,0 +1,27 @@
+td.textReader {
+	position: relative;
+}
+td.textReader[aria-label]:after {
+    opacity: 0;
+    content: attr(aria-label) !important;
+    position: absolute !important;
+    left: 0px !important;
+    top: 0% !important;
+    height: auto !important;
+    z-index: 999999999999999 !important;
+    background: #144176 !important;
+    color: #ffffff !important;
+    padding: 3px 8px !important;
+    width: 100%;
+    line-height: 14px;
+    font-size: 12px;
+}
+td.textReader[aria-label]:hover:after {
+	opacity:1;
+}
+
+
+
+                  <td class="textReader" aria-label="text title">
+                   Texto
+                  </td>
